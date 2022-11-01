@@ -1,0 +1,11 @@
+/* 특정 폰트를 사용시 웹폰트를 사용자에게 제공해야 한다. */
+/* 1.가져다 쓴다.
+2.직접제공한다. */
+
+body {
+  font-family: 'Anton', sans-serif;
+  /* font-family: 'Merienda', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Roboto', sans-serif; */
+}
+

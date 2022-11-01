@@ -1,0 +1,80 @@
+<!--테이블심화 복잡한 테이블 만들기-->
+
+<!--rowspan=""/colspan=""--><!----><!----><!---->
+
+<link rel="stylesheet" href="style2.css" />
+<!--
+<table>
+  <tr>
+    <th>테이블헤더</th>
+    <td>테이블데이터</td>
+  </tr>
+</table>
+-->
+<!--1.한줄에 몇칸의 셀이 들어가는지 파악.-->
+<table>
+  <tr>
+    <thead>
+      <th></th>
+      <th scope="col">월</th>
+      <th scope="col">화</th>
+      <th scope="col">수</th>
+      <th scope="col">목</th>
+      <th scope="col">금</th>
+    </thead>
+
+    <tbody>
+      <!--왕초보 셀합치기(병합)?-->
+      <tr>
+        <th scope="row">1교시</th>
+        <!--줄에 대한 테이블 헤더-->
+        <td rowspan="2">왕초보 HTML &amp; CSS</td>
+        <!--rowspan 2줄차지 이후 td에 영향을 줌-->
+        <td>모각코 CSS</td>
+        <td rowspan="2">왕초보 HTML &amp; CSS</td>
+        <td>모각코</td>
+        <td rowspan="2">왕초보 HTML &amp; CSS</td>
+      </tr>
+      <tr>
+        <th scope="row">2교시</th>
+        <!--줄에 대한 테이블 헤더-->
+        <!--<td >왕초보 HTML &amp; CSS</td>-->
+        <!--rowspan 이미 위에서 2줄을 차지한 상태로 2번째줄을 마크업하지 않아도 된다.-->
+        <td rowspan="2">JavaScript 스킬업</td>
+        <!--<td>왕초보 HTML &amp; CSS</td>-->
+        <td rowspan="2">JavaScript 스킬업</td>
+        <!--<td >왕초보 HTML &amp; CSS</td>-->
+      </tr>
+      <tr>
+        <th scope="row">3교시</th>
+        <td>JavaScript시작반</td>
+        <!--<td rowspan="2">JavaScript 스킬업</td> 생략 skip-->
+        <td>JavaScript시작반</td>
+        <td>JavaScript시작반</td>
+      </tr>
+      <!--행이 전부 합쳐진 점심시간-->
+      <tr>
+        <th colspan="6" scope="row">점심시간</th>
+        <!--6칸이 모두 합쳐짐-->
+      </tr>
+      <tr>
+        <th scope="row">4교시</th>
+        <td>SASS 기초반</td>
+        <td rowspan="2">HTML &amp; CSS 포트폴리오반</td>
+        <td rowspan="2">Open Seminar</td>
+        <td rowspan="2">HTML &amp; CSS 포트폴리오반</td>
+        <td>SASS 기초반</td>
+      </tr>
+      <tr>
+        <th scope="row">5교시</th>
+        <td>모각코</td>
+        <!--<td rowspan="2">HTML &amp; CSS 포트폴리오반</td>-->
+        <!--<td rowspan="2">Open Seminar</td>-->
+        <!--<td rowspan="2">HTML &amp; CSS 포트폴리오반</td>-->
+        <td>모각코</td>
+      </tr>
+    </tbody>
+  </tr>
+</table>
+
+<!--테이블 헤더한테만 쓸 수 있는 태그 scope = "row\col" 열의 헤더인지 행의 헤더인지 좀 더 명확하게 표시해주면 좋다. 브라우저에 더 명확한 정보를 넘겨줄 수 있다는점.-->

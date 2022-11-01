@@ -1,0 +1,29 @@
+<!--라디오 버튼 : 하나만 선택가능 체크박스 : 여러개 선택가능(다중선택)-->
+<!--submit을 누르면 서버에서 폼을 받고 어떤값이 선택됐는지 on 상태를 명확히 알려주기 위해 value 값을 꼭 명시해줘야 한다. name=value로 전달될 것.-->
+<!--서버가 무엇을 선택했는지 알 수 있도록 value 값을 적어줘야함.-->
+<!--name : input type radio가 연과되어있음을 알려주기위해 value어떤항목이 선택됐는지 알려주기 위해 구분지어줌.-->
+<!---->
+<form action="" method="GET">
+<input type="radio" name="subscription" value="subscribed" id="subscribed"/>
+<label for="subscribed">구독중</label>
+<input type="radio" name="subscription" value="unsubscribed" id="unsubscribed"/>
+<label for="unsubscribed">미구독</label>
+<button type="submit">
+  submit
+</button>
+
+
+<hr/>
+
+<input type="radio" name="apple" value="1" id="subscribed"/>
+<label for="apple">사과</label>
+<input type="radio" name="banana" value="0" id="unsubscribed"/>
+<label for="banana">바나나</label>
+<button type="submit">
+  submit
+</button>
+
+</form>
+<!--왜 둘 다 선택이 될까?? 같은 radio그룹이라는걸 알길이 없어 그러니까 name 속성을 붙여줘야한다.-->
+
+<!--두 항목을 생성하면 각 name별 radio항목이 작동함 구독/사과가 한개씩 선택-->

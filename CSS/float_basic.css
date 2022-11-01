@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+}
+
+.parent {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #eff2f7;
+}
+
+.parent::after {
+  content: "";
+  /* Clear는 display block에만 사용가능!!!!!! */
+  display: block;
+  clear: left;
+}
+
+.child {
+  float: left;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.other {
+  background-color: black;
+  color: #fff;
+}

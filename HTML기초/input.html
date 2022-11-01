@@ -1,0 +1,36 @@
+<!--입력창, 인풋 필드 type="?" 타입속성을 적절하게 설정할것-->
+<!--타입이 텍스트인경우 웬만한 텍스트는 사용가능한 기본적인-->
+
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Form - Input</title>
+  <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <form action="" method="GET">
+  <!-- 여기에 코드를 작성하세요 ❤️ -->
+  <label for="user-name">이름</label> <!--,라벨을 클릭하면 인풋에 포커스-->
+  <input type="text" id="user-name" placeholder="이름을 입력하세요" minlength="5" maxlength="13" value="기본값"/> <!--maxlength 최대 입력글자수/ minlength 최소입력글자수/required 무조건 입력해야하는 부분/disabled 사용하지 못하게 막아두는-->
+  <!--value 값은 기본 텍스트값 placeholder와는 다르다.-->
+  <!--input type-->
+  <label for="user-email">비밀번호</label>
+<input type = "email" id="user-email" placeholder="이메일을 입력하세요"> <!--이메일형식이 아닌 다른 텍스트를 입력하면 알림창이 뜸. 미리 유효성검사를 한다고 보면 됨.@를 체크-->
+
+<label for="user-password">비밀번호</label>
+<input type = "password" id="user-password" placeholder="비밀번호 입력하세요" minlength="5"><!--***로 뜸-->
+
+<input type = "url" placeholder="웹 url을 입력하세요"><!--url만 입력가능-->
+<input type = "number" min="12" max="122"placeholder="나이를 입력하세요"><!--숫자만 가능/ 12세이상 122세 이하의 범위를 설정하고 싶은경우 min = 입력할 수 있는 숫자의 최소값을 입력 (minlength와다름!)-->
+<input type = "file" accept=".png,.jpg"/><!--파일첨부_파일형식을 지정해 두고 싶다면? accept=".png,.jpg"-->
+
+<button>
+  submit
+</button>
+</form>
+</body> 
+</html>

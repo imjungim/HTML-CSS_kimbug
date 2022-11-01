@@ -1,0 +1,15 @@
+<!--똑같이 name과 value값을 그대로 사용해줘야한다.select안에만 name값을 줘도 자식요소에도 모두 적용-->
+<!--name value 값을 지정하면 : skill=css 을 확인 가능-->
+<!---->
+
+<form action="" method="GET">
+  <label for="skill">스킬</label> <!--스킬을 누르면 포커스이동-->
+<select multiple name="skill" id="skill"><!--multiple 다중선택 가능 ctrl누르고 다중선택 name value 값 skill=html&skill=css&skill=js-->
+  <option value="html">HTML</option>
+  <option value="css">css</option>
+  <option value="js">JavaScript</option>
+</select>
+<button type="submit">
+  submit
+</button>
+</form>

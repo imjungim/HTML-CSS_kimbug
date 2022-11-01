@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+
+body {
+  font-family: 'Poppins',sans-serif;
+}
+
+.card-image{
+  display: flex;
+  justify-content: center;
+  align-items: center; /*가운데 배치*/
+  width: 300px;
+  height: 200px;
+  background-image: url('./image/img-house.jpg');
+  background-repeat: no-repeat;/*no반복*/
+  background-position: center center;
+  background-size: cover; /*영역을 채워*/
+  overflow: hidden; /*짤라서 안보이게*/
+  border-radius: 6px;
+}/* 세로가 긴 이미지 */
+
+.card-image.vertical img {
+  width: 100%;
+  height: auto;
+}
+
+.card-image.horizontal img{
+  width: auto;
+  height: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+/* 가로가 긴 이미지는???? 클래스를 써서 수정 
+근데...각기 다른 이미지사이즈를 매번 맞춰서 수정은 불가 js?css로도 힘들다.
+-> background-image를 사용하자 */
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.plus-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  margin-right: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4285714286;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #92174d;
+}
+
+.property-type span{
+  font-size: 16px;
+  line-height: 1.25;
+  color: #7d858f;
+}
+
+.property-rate{
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.property-rate strong{
+  color: #151b26; 
+  font-weight: 400; 
+}
+
+.property-rate span{
+  color: #7d858f; 
+}
+
+.property-rate::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url('./image/icon-star.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /*사이즈가 딱 맞춰 알맞게*/
+}
+
+.card-title{
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #151b26;
+}

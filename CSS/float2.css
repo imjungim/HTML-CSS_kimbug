@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: black;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1f2d3d;
+  line-height: 1.25;
+}
+
+strong {
+  font-size: 14px;
+  font-weight: 400;
+  color: #afb3b9;
+  line-height: 1.4285714286;
+}
+
+p {
+  font-size: 16px;
+  color: #79818b;
+  line-height: 1.5;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+} /*범용적으로 사용할 수 있도록 클래스 생성(재사용~)*/
+
+.card {
+  background-color: white;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.card-user {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  margin-right: 20px;
+}
+.card-content h1 {
+  margin-bottom: 4px;
+}
+
+.card-content strong {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.card-user, .card-content{
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* image도 원래 inline 요소이지만 float적용 후 block으로 변경됨 */
+
+
+/* margin 사용시 top / bottom 하나만 일관적으로 사용하는 쏀스(나중에 헷갈려) */
+/* 가로배치 float  image, card content의 가로배치가 필요!*/
+/* card의 모든 자식이 float으로 변경되어 height가 0이됨 고쳐주자 */
+/* 가상요소 clearfix를 만들어 clear해주고 card class에 적어주자(다른 요소에서도 float사용 시 바로 잡아주는 로직이 완성*/
+/* 가상요소를 만들어주고 clear */
+
+/*
+
+
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+} /*height 0 에서 80으로 잘 돌아옴 clear (감싸고있는 자식요소들의 height합이 총 80px)*/
+/*
+.card{
+  padding: 20px;
+  background-color: white;
+  max-width: 600px;
+}
+
+.card-user{ 
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card-content h1 {
+  margin-bottom: 4px;
+}
+
+.card-content strong {
+  margin-bottom: 12px;
+  display: block;
+}
+
+.card-user, .card-content {
+  float : left
+} */

@@ -1,0 +1,28 @@
+<!--text가 아닌 데이터형태 <img태그> 오디오,비디오,등-->
+<!--<img src="" alt=""/>-->
+
+<!--source src필수 / 경로설정 / 재생,소리조절,무한반복 등 속성을 지정해준다.-->
+<!--<audio src="./asset/audio/kimbug.mp3" loop autoplay></audio>--> <!--controls attribute사용을 하지 않으면 아무것도 안뜸 / 자동재생을 하고 싶을땐 autoplay /loop 반복재생-->
+
+<audio controls>
+  <source src="./asset/audio/kimbug.wav" type="audio/wav ">  <!--html audio  type 을 쓸경우 검색해본다.-->
+  <source src="./asset/audio/kimbug.mp3" type="audio/mpeg ">
+  <source src="./asset/audio/kimbug.ogg" type="audio/ogg ">
+</audio>
+
+<!--파일이 하나만 뜨는걸 확인 가능. 1/2번쨰의 차이는 ? -->
+<!--can i use mp3 audio format 브라우저별 지원 가능 여부를 확인 오디오 소스별로 브라우저에서 작동하지 않을 경우를 대비하여 여러가지 소스를 넣어둠.-->
+
+<!--video 태그(는 audio와 사용방식이 똑같다.)-->
+
+<video src="./asset/video/kimbug.mov"controls></video>
+
+<video controls>
+  <source src="./asset/video/kimbug.mov" type="video/mp4"/>
+  <source src="./asset/video/kimbug.mp4" type="video.mp4"/>
+  <p>브라우저를 업데이트 하세요~</p> <!--browsehappy-->
+  <a href="https://browsehappy.com/">브라우저 업데이트하기</a>
+</video>
+
+<!--iframe html문서안에 또다른 html을 임베드할때-->
+<iframe src="https://edu.goorm.io"></iframe> <!--또다른 html컨텐츠를 집어넣을때 유튜브,트위터 등을 쉐어할때 복붙해서 사용한다고 알고있자.-->

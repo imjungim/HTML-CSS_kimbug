@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 700; 
+  color: rgb(0,102,255,1);
+  text-indent: 50px;
+}
+
+body {
+  font-family: Roboto sans-serif;
+}
+
+
+/* text-indent : 들여쓰기 ,마이너스값도 사용가능하다*/
+/* text-transform : text변형 알파벳 메이스의 문자들에만 
+none /capitalize/upperCase/lowerCase */
+/* text-decoration : none/underline/line-through/overline
+a태그 사용 시 기본 속성에 밑줄이랑 파란글씨.... text-decoration : none설정을사용 */
+/* font-style : normal/italic/oblique
+italilc 문자기울임 */

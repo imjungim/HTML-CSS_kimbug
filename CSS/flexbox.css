@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/*list-style-type : none; ul의 동그라미 없애주기 */
+
+ul{
+  list-style-type :none;
+  padding-left: 0;
+}
+.tab-menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #E5EAEF;
+  background-color: white;
+  max-width: 540px; /* 최대길이 */
+}
+
+.tab-menu-item {
+  margin-right: 16px;
+}
+
+.tab-menu-item a {
+  display: block; /* a는 inline 요소이기떄문에 마진 패딩 설정이안됨 -> display block;으로 변경해야 패딩지정가능 */
+  padding: 16px 20px;
+}
+
+/* 패딩값을 지정할때 a에 줄것을 추천 영역때문에 li에 지정하게되면 글씨를 눌러야 클릭이 가능해짐(타겟영역을 넓혀주자)
+ */
+.tab-menu-item.selected{
+  border-bottom: 2px solid #2860E1;
+}
+ .tab-menu-item.selected a{
+  color: #2860E1;
+  font-size: 500;
+ }

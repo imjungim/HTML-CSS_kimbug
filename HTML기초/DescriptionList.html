@@ -1,0 +1,79 @@
+<!-- 정의리스트 <dl>용어를 정의할떄</dl>
+<dl>key-value사용할때</dl>
+
+key:value 이름 : 홍정임 직업:백수 무언가 정의내릴떄 사용
+
+dt,dd가 따라와야함
+구체적으로 dfn을 사용
+description term
+description <datagrid></datagrid>
+
+good vs bad example
+
+
+-------good practice----- -->
+<dl>
+  <dt>홍정임</dt>
+  <dd>주니어 개발자의 성장을 위한 공부중입니다.</dd>
+</dl>
+<!--dt에대한 설명을 dd에 이어적음-->
+
+<dl>
+  <dt>
+    <dfn>development</dfn>
+  </dt>
+  <dd>1. [u] 발달, 성장</dd>
+  <dd>2. [u,c] (신제품의) 개발; 신개발품</dd>
+</dl>
+
+<!--dfn정의 dd 정의된 dt에대한 설명-->
+
+<dl>
+  <dt>김버그</dt>
+  <dt>kimbug</dt>
+  <dd>주니어 개발자의 성장드라마를 다루는 채널입니다.</dd>
+</dl>
+
+<!--dt같은용어가 비슷한계열 dd dt에대한 설명-->
+
+<dl>
+  <dt>김버그</dt>
+  <dt>kimbug</dt>
+  <dd>주니어 개발자의 성장드라마를 다루는 채널입니다.</dd>
+  <dd>
+    <a href = "https://youtube.com/c/kimbug">김버그 채널</a>
+  </dd>
+</dl>
+
+<dl>
+  <div> division
+    <dt>사과</dt>
+    <dd>사과에 대한 설명</dd>
+  </div>
+  <div> division
+    <dt>바나나</dt>
+    <dd>바나나에 대한 설명</dd>
+  </div>
+</dl>
+
+-------bad practice-----
+
+<dl>
+  <dt>홍정임</dt>
+  <dd>주니어 개발자의 성장을 위한 공부중입니다.</dd>
+  <dt>데벨업</dt> 설명이 없자나~ 새로운 dt만있자나~
+</dl>
+
+<dl>
+<section>
+  <dt>김버그</dt>
+  <dd>주니어개발자의 블라블라</dd>
+</section>
+</dl>
+<!--dl의 자식요소는 오직 div,dt,dd만 가능하다!!!!-->
+
+<dt>
+  김버그
+</dt>
+<!--dt와 dd는 반드시 dl의 자식요소로 존재해야 한다-->
+
