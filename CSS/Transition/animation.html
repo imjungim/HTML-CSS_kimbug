@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./background.css" />
+    <link rel="stylesheet" href="./animation.css" />
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <div>
+      animation vs transition ???<br />
+      transition은 속성의 값이 변화할때 전환하면서 부드럽게 바뀌고 <br />
+      animation은...그냥 효과를 주고싶을때<br />
+      animation은 관련 속성이 굉장히 多
+      1. property name   animation-name<br /> 
+      @keyframes로 어떤 애니메이션을 줄지 정의 시작~끝까지 어떻게 동작할지
+      정의를 해준다.
+      <br />
+      @keyframes name(이름은 아무거나) { 어떻게 바꿀건지 from{ Rules } to {
+      Rules } }
+      <br />
+      @keyframes name(이름은 아무거나) { 어떻게 바꿀건지 0%{ Rules } 50% { Rules
+      } 100% { Rules } }
+      <br>
+      2. duration 지속시간 ms s animation-duration<br>
+      3. timing-function (trasition과 동일) 변화속도가 어떻게 진행? animation-timing-function <br>
+      4. delay ms s <br><br>
+      5. iteration-count 되풀이 -> 몇번 반복할건지? animation-iteration-count 정수 또는 infinite(무한반복)로 선언 가능<br>
+      6. direction 어떤방향으로 진행될건지? from~to방향으로 진행인데 animation-direction: alternate;(번갈아가면서 동작) 
+    </div>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
