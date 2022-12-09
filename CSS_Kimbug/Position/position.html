@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./position.css">
+</head>
+<body>
+  <h1>Position</h1>
+  <div>요소를 원하는 위치에 배치하기</div>
+  <div>1. Type : 오떤 포지션을 사용하는가? 2. 기준점 : 각 포지션 타입에 따라 달라진다.</div>
+  <div>static, relative, absolute, fixed </div>
+  <h3>#1 static 모든요소의 기본 position</h3>
+  <h3>#2 relative 원래 자신의 자리가 기준이된다.</h3>
+  <p>float와 같이 붕뜨게 됨 그러나 자신의 위치를 기억은 하고있다.</p>
+  <h3>#3 absolute : float와 비슷한 현상이 일어난다.</h3>
+  <p>집나가고,,블록이되고,,, 길막을 못하는 블록으로 바뀐다. </p>
+  <p>block으로 padding, width, height 모두 사용가능, 마진안생기는 이상한 블럭도 됨</p>
+  <p>absolute의 기준점은??? 원하는 기준점을 지정할수 있다. 자신을 감싸고 있는 부모요소 중 선택이 가능하다.</p>
+  <p>position이 static이 아닌경우를 기준점으로!!</p>
+  <h3>#4 fixed (absolute와 동일한 현상)</h3>
+  <p>차이가 있다면 자신의 기준점이 명확히 정해져 있다. -> viewport기준(= 브라우저 창의 전체크기)</p>
+  <div class="parent">
+    <div class="child red">Child</div>
+    <div class="child yellow">Child</div>
+    <div class="child blue">Child</div>
+  </div>
+
+  <h3>어디로 움직일건지??🤔 top, right, bottom left</h3>
+  <p>top,left /// bottom, left 기준을 정해서 합리적으로 사용할 것.</p>
+  <h3>#5 z-index</h3>
+  <p>붕뜨는 성질에 의해 z-index가 생성됨 (다른 요소들을 가려야할때)</p>
+</body>
+</html>

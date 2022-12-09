@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #E5E5E5;
+}
+/* !!!form요소에는 body에 폰트를 적용해도 먹지를 않으니 주의.. */
+
+button,
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+}
+
+.line-button {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+
+  padding: 18px 30px;
+  color: #151B26;
+  cursor: pointer;
+}
+
+/* 마우스가 올라가지 않을때 가상요소는 width 0 */
+
+.line-button::after {
+  content : '';
+  position: absolute; /* 가상요소는 inline이지만 absolute를 적용하면 모두 block으로 신분상승!!!!*/
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0066ff;
+  transition : width 250ms ease-in, background-color 250ms ease-in;
+}
+
+.line-button:hover::after {
+  width: 100%;
+  background-color: hotpink;
+}
+
+/* transition을 어디다?  */
+

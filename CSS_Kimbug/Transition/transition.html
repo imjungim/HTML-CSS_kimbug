@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./background.css">
+  <link rel="stylesheet" href="./1.css">
+</head>
+<body>
+  <h1>Transition Study</h1>
+  <>
+    <p>속성의 값을 변경할 때 애니메이션효과를 통해 자연스럽게 스르륵 변화가 일어나도록 도와주는</p>
+    <p>property   duration   [timing-function]   [delay] (마지막 2개는 생략가능)</p>
+    1.property 어떤변화가 일어날지 선언<br/>
+    2. duration 지속시간 얼마동안 지속돼야 ? ms s  1,000ms === 1s
+    <br/>
+    .box의 클래스에 active를 추가하면 스르륵 만약 전체 속성을 바꾸고 싶을땐 all
+    3. timing-function 변화의 속도를 지정 <br/>
+    ease-in 처음엔 천천히하다 휙 , ease-out 빠르게~천천히, ease-inout 
+    이 속도를 지정하기 할 수도 있음.<br/>
+    cubic-bezier.com이용(곡선을 만드는 펑션??)_ease-in자리에 대신 넣어줌 <br/>
+    4. delay 지연시켜서 
+    <br>
+    좀 더 섬세하게 하고싶다면_
+    <br>
+    transition: all 2500ms ease-in 1000ms;<br/>
+    transition: background-color 2500ms ease-in 1000ms;<br/>
+    transition: background-color 2500ms ease-out , font-size 1000ms ease-in; 각각 선언도 가능 
+  </div>
+<div class="container">
+  <div class="box">
+    Hello Box
+  </div>
+</div>
+</body>
+</html>

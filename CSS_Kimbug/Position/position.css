@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.parent {
+  width: 200px;
+
+  margin: 0 auto;
+  background-color: #eff2f7;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  line-height: 200px; 
+  margin: 0 auto;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}

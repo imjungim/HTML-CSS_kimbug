@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./boxmodel.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./BoxModel.css">
+</head>
+<body>
+  <h2>BoxModel practice</h2>
+  <span>1. content : 가로는 width, 세로는 height<br>
+    2. padding : d안쪽 여백, 즉 content 와 border 사이의 공간을 나타냄
+    <br>3. border : 테두리 border : 굵기 스타일 색상 / border : none / border-radius : 4px
+    <br>4. margin : 요소와 요소사이의 간격</span>
+  <div class="box">
+    Box Test
+    border 5px적용 동그랗게 원으로 만들고 싶다면 border-radius 50%
+    box 사이의 간격 Margin
+  </div>
+
+  <div class="box2">
+    Box Test border Dot
+  </div>
+
+  <div class="box3">
+    Box Test border dashed
+  </div>
+
+  <h2>Box Sizing : box size를 설정하는 방법</h2>
+  <div class="box-practice">
+    HelloCSS
+    content박스가 480 *480으로 지정된 상태!!() 
+
+  </div>
+ 
+  <p>기본적으로 content-box로 설정된다.</p>
+  <p>width, height content box가 기준</p>
+  <p>border까지의 width, height를 기준으로 변경 해준다.</p>
+  <div class="box-sizing">
+    👏box-sizing
+    box-sizng border-box적용
+  </div>
+  <p> * { box-sizing : border-box; } 적용하자 </p>
+</body>
+</html>

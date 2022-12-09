@@ -1,0 +1,20 @@
+p {
+  font-size: 24px;
+}
+
+html {
+  font-size: 20px;
+}
+
+/* .parent {
+  font-size : 20px;
+} */
+
+.child {
+  font-size: 3rem;
+}
+
+.child2 {
+  font-size: 1rem;
+  font-weight: 700;
+}

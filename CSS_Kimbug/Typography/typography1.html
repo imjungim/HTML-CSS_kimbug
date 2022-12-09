@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography</title>
+  <link rel="stylesheet" href="./typography1.css">
+</head>
+<body>
+  <h2>font-size</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo animi odio ipsa ipsam iusto fugiat in corrupti, reiciendis nesciunt nihil. Provident sint repellat impedit nesciunt enim, laudantium labore quam libero!</p>
+  <div>px(절대단위) em(상대단위) rem(상대단위) ???????</div>
+  <div>em = equal to capital M 실제로 적용된 폰트 사이즈 기준 </div>
+  <div>현재 p에 적용된 폰트 사이즈는 24px = 1em 이다. width: 20em 으로 설정할 경우 20 * 24 = 480px</div>
+  <div>rem = rootem ? root는 html자체를 듯한다. html에 적용된 폰트 사이즈를 1rem으로 본다.</div>
+
+  <div class="parent">
+    <p class="child">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Similique, facere dolor excepturi amet modi expedita aliquam deserunt explicabo ipsam maiores nesciunt, doloribus porro, at provident minima illum doloremque vitae non!
+    </p>
+  </div>
+
+  <div>child의 폰트사이즈 3rem은 html의 폰트사이즈 20px * 3 = 60px </div>
+  <h2>line-height 줄간격 (em을 많이 사용_폰트사이즈에 비례해서)</h2>
+  <div class="parent2">
+    <p class="child2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Similique, facere dolor excepturi amet modi expedita aliquam deserunt explicabo ipsam maiores nesciunt, doloribus porro, at provident minima illum doloremque vitae non!
+    </p>
+  </div>
+  <h2>letter-spacing px, em (rem은 잘 사용하지 않아) 자간조정</h2>
+  <h2>font-family 폰트서체 설정</h2>
+</body>
+</html>

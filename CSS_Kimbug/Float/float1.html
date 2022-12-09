@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./float1.css">
+</head>
+<body>
+  <h1>Float : 가로배치(block의 길막을 해결)</h1>
+  <p>1.What happens??</p>
+  <p>요소에 적용하면 붕뜨게된다.??🤔</p>
+  <p>#1 집나간 자식 : 집을나가게 되면 빈공간으로 인식해서 그 자리를 다른 형제들이 차지한다.<br>
+  그러면 부모의 height가 줄어들게된다.</p>
+  <p>#2 블록으로 신분 상승 inline,inline Block, Block 모두 float가 되면 display가 Block으로 바뀐다.<br>
+  width,height,margin,padding 전부 가능</p>
+  <p>✨어딘가 하자있는 블록이된다. 실제 가진 content 크기만큼만 커진다. display값이 block으로 바껴도 완전한 block은 아니다!.</p>
+  <p>남은 공간은 margin으로 채워지는 block속성도 적용되지 않는다.</p>
+  <p>#3 other안의 컨텐츠들은 folat된 존재들을 파악하고 피한 자리로 흘러다닌다. 레이아웃붕괴</p>
+  <div class="parent">
+    <div class="child red">Child</div>  
+    <div class="child yellow">Child</div>
+    <div class="child blue">Child</div>
+  </div>
+  <div class="other">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum
+    laborum doloremque architecto quibusdam cupiditate, quasi rerum ut
+    voluptate reiciendis sapiente beatae esse nobis sint fugiat eligendi
+    commodi nulla. Commodi nulla rerum hic minima quas cupiditate ut
+    reprehenderit ab rem, dicta voluptate dolorem tempora id assumenda
+    necessitatibus autem cum quos porro eligendi? Saepe, amet libero cum unde
+    ad nostrum praesentium optio soluta ullam earum obcaecati est. Enim cum
+    similique maiores unde porro tempore voluptate omnis cupiditate voluptas
+    eligendi, accusantium sit perferendis et ullam iste vel doloribus
+    recusandae placeat quod expedita. Cum voluptates sunt magni consequatur
+    eos dolorum facere accusamus ullam placeat, nulla, dolor dolorem inventore
+    dicta corporis, nostrum sequi! Eaque at esse ullam, excepturi beatae,
+    asperiores vero consectetur recusandae facere adipisci, ipsa ab et
+    repudiandae laboriosam quod? Doloribus, inventore nihil voluptates aliquam
+    aliquid mollitia quidem quam dignissimos. Nam amet blanditiis ab pariatur
+    assumenda quisquam, nulla possimus accusantium doloribus perferendis
+    obcaecati reiciendis ipsa beatae, aliquid dolor id molestias impedit ex
+    dolores. Quas fuga iusto maiores cumque unde totam velit odit iure
+    voluptatum atque eos commodi adipisci vel omnis consequuntur
+    reprehenderit, recusandae voluptate beatae dolor deleniti eaque quo earum
+    eum. Quasi ex natus eius, quod animi sunt, modi reiciendis quaerat debitis
+    fugiat illum soluta hic asperiores harum laboriosam amet placeat mollitia
+    aut est ducimus dicta! Ab ad libero illo explicabo repellendus
+    necessitatibus eos. Rerum, maxime tempore, alias ipsum dolorem minima,
+    sunt culpa veniam provident porro temporibus voluptate aspernatur
+    praesentium non consectetur quod dolorum iure tenetur? Velit quod, facere
+    eaque, illum distinctio, minus unde quam quo dignissimos optio nisi autem
+    possimus amet delectus. Assumenda veritatis ab doloremque praesentium
+    repudiandae facilis nisi cupiditate, porro vel impedit at voluptate ad
+    dolores distinctio esse fugit odio natus corporis, vitae, obcaecati fuga
+    inventore. Maiores, ad voluptates asperiores assumenda magni repellat.
+    Suscipit nam atque aut quia eum porro.
+  </div>
+</body>
+</html>

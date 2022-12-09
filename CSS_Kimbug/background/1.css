@@ -1,0 +1,172 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* sr-only? dl : 용어를 정의해주는 태그이고 dt,dd가 반드시 있어야한다.
+스크린리더로 웹을 이용하는 사람들에게 정보전달을 위한 시멘틱 마크업 그런데 디자인적으로
+보여질 필요가 없는 부분 스크린리더에게는 들리지만 눈에 보이지 않는 범용적인 클래스!!
+*/
+.sr-only {
+/*  display: none;  없는취급 간단하지만 스크린리더에도 적용된다. 눈에만 안보여야함 */
+  position: absolute; /* 집나간취급 */
+  z-index: -100;
+  width: 1px; /* 0px이 되면 스크린리더에 읽히지 않음 1px이라도 설정 */
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.card {
+  display: flex;
+  width: 840px;
+  padding: 24px;
+}
+
+/* vertical 이미지일 때 가로 이미지에 대응이 될까? 
+vertical, horizontal 클래스를 자동으로 넣어줘야 -> 자바스크립트로 해야 가능 
+그러니까 그냥 background-img를 사용하자! 논리적인 사고*/
+.card-image {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  overflow: hidden; /* 바깥으로 나간 이미지들을 잘라넣음 */
+  width: 300px;
+  height: 200px;
+  margin-right: 24px;
+  border-radius: 6px;
+  background-image: url('./assets/img-house.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.card-image .like-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  background-image: url('./assets/icon-favorite.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+
+/* !!card-content의 width값을 지정해 주지 않은 상태에서 
+display flex 속성은 자신이 가진 가장 긴 컨텐츠의 넓이만큼(h1 443px만큼차지)이 영역으로 지정된다.
+남은 공간을 카드 컨텐츠로 꽉 채우기위해 flex-grow를 사용
+flex박스가 공간을 더 차지할 것인지? flex-grow : 0 영역차지 안함 1일경우 남은 영역을 차지하게 해줌.   */
+.card-content {
+  flex-grow: 1;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+
+.plus-badge {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.428571428571429;
+  color: #FFF;
+  padding: 1px 8px;
+  margin-right: 6px;
+  background-color: #92174D;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.property-type span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #7D858F;
+}
+
+.property-rate {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.property-rate strong {
+  font-weight: 400;
+  color: #151B26;
+}
+
+.property-rate span {
+  color: #7D858F;
+} 
+
+.property-rate::before {
+  content : "";
+  display: inline-block;
+  position: relative; /* relative는 자신의 위치를 기억하기 때문에 다른 요소에 영향을 주지않고 위치를 살짝만 내려줄 수 있다. 인라인 블럭의 영향으로 살짝떠있는 상태를 조정..*/
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url('./assets/icon-star.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /* 이미지 사이즈가 딱 알맞게 들어감 */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 400; /* regular */
+  line-height: 1.6;
+  color: #151B26;
+
+  margin-bottom: 16px;
+}
+
+.property-detail {
+  font-size: 14px;
+  line-height: 1.142857142857143;
+  color: #7D858F;
+}
+
+.property-detail dd span::after {
+  /* 가상요소는 기본 display : inline 이라는 점!!!!!! */
+  content : '·';
+  margin: 0 8px; /* margin top, bottom은 가능 */
+}
+
+/* 구조적 가상 선택자 사용*/
+.property-detail dd span:last-child::after {
+  content : '';
+  margin: 0;
+}
+
+.property-detail div:first-child {
+  margin-bottom: 8px;
+}
+

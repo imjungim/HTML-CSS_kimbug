@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoxType</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./BoxType.css">
+</head>
+<body>
+  <h2>BoxType</h2>
+  <h3>BoxType을 결정짓는 속성 Display</h3>
+  <h3>1.Block : 길막</h3>
+  <p>따로 width를 선언하지 않은 경우, width = 부모의 content-box의 100%</p>
+  <p>따로 width를 선언한 경우, 남은 공간은 margin으로 자동 채움</p>
+  <div class="parent">
+    <div class="child">
+      1.child
+    </div>
+    <div class="other">
+      2.Other
+    </div>
+  </div>
+   <p>👏width, height, padding, border, margin 모두 적용가능</p>
+   <p>👏따로 부모의 height를 선언하지 않을 경우, 자식요소의 height의 합 = 부모의 height</p>
+
+  <h3>2.Inline : 흐름(옆으로 늘어서서 흘러다님 가로배치가 자동으로~)</h3>
+  <p>👏문서작업시와 똑같다. 옆에 공간이 없다면 다음줄로 넘어가는 성질</p>
+  <p>👏면(Block영역) : 선(inline흐름)</p>
+  <p>👏 🙅‍♀️🙅‍♂️🙅<strong>width, height, padding-top, padding-bottom, border-top, border-bottom,margin-top, margin-bottom사용불가!</strong></p>
+  <h4>예제</h4>
+  <p>padding-left,padding-right는 지정시 아무문제가 안됨. 그러나 padding-top을 지정하면 아래와 같이 영역이 뒤덮혀 버린다.(영역으로서 의미가 없다)</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, sed temporibus dicta ullam dolor culpa ex minus, dignissimos distinctio expedita dolores, necessitatibus<span> consequatur possimus accusantium maxime aperiam</span> ducimus illo nisi.</p>
+
+  <h3>3.Inline Block : Block && Inline </h3>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, sed temporibus dicta ullam dolor culpa ex minus, dignissimos distinctio expedita dolores, necessitatibus<span> consequatur possimus accusantium maxime aperiam</span> ducimus illo nisi.</p>
+  
+</body>
+</html>

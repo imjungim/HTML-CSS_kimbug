@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./float2.css">
+</head>
+<body>
+  <h1>Float해결하기</h1>
+  <p>#1. float이 적용된 자식을 가진 부모요소에 overflow :hidden을 적용하기.</p>
+  <p>parent에 overflow : hidden을 적용해보자.</p>
+  
+  <div class="parent">
+    <div class="child red">Child</div>  
+    <div class="child yellow">Child</div>
+    <div class="child blue">Child</div>
+  </div>
+  <div class="other">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum
+    laborum doloremque architecto quibusdam cupiditate, quasi rerum ut
+    voluptate reiciendis sapiente beatae esse nobis sint fugiat eligendi
+    commodi nulla. Commodi nulla rerum hic minima quas cupiditate ut
+    reprehenderit ab rem, dicta voluptate dolorem tempora id assumenda
+    necessitatibus autem cum quos porro eligendi? Saepe, amet libero cum unde
+    ad nostrum praesentium optio soluta ullam earum obcaecati est. Enim cum
+    similique maiores unde porro tempore voluptate omnis cupiditate voluptas
+    eligendi, accusantium sit perferendis et ullam iste vel doloribus
+    recusandae placeat quod expedita. Cum voluptates sunt magni consequatur
+    eos dolorum facere accusamus ullam placeat, nulla, dolor dolorem inventore
+    dicta corporis, nostrum sequi! Eaque at esse ullam, excepturi beatae,
+    asperiores vero consectetur recusandae facere adipisci, ipsa ab et
+    repudiandae laboriosam quod? Doloribus, inventore nihil voluptates aliquam
+    aliquid mollitia quidem quam dignissimos. Nam amet blanditiis ab pariatur
+    assumenda quisquam, nulla possimus accusantium doloribus perferendis
+    obcaecati reiciendis ipsa beatae, aliquid dolor id molestias impedit ex
+    dolores. Quas fuga iusto maiores cumque unde totam velit odit iure
+    voluptatum atque eos commodi adipisci vel omnis consequuntur
+    reprehenderit, recusandae voluptate beatae dolor deleniti eaque quo earum
+    eum. Quasi ex natus eius, quod animi sunt, modi reiciendis quaerat debitis
+    fugiat illum soluta hic asperiores harum laboriosam amet placeat mollitia
+    aut est ducimus dicta! Ab ad libero illo explicabo repellendus
+    necessitatibus eos. Rerum, maxime tempore, alias ipsum dolorem minima,
+    sunt culpa veniam provident porro temporibus voluptate aspernatur
+    praesentium non consectetur quod dolorum iure tenetur? Velit quod, facere
+    eaque, illum distinctio, minus unde quam quo dignissimos optio nisi autem
+    possimus amet delectus. Assumenda veritatis ab doloremque praesentium
+    repudiandae facilis nisi cupiditate, porro vel impedit at voluptate ad
+    dolores distinctio esse fugit odio natus corporis, vitae, obcaecati fuga
+    inventore. Maiores, ad voluptates asperiores assumenda magni repellat.
+    Suscipit nam atque aut quia eum porro.
+  </div>
+  <p>#2. Clearfix</p>
+  <p>float으로 망가진 레이아웃을 고쳐주는 속성 left | right | both </p>
+  <p>pseudo-element로 임의의 가상요소 + clearfix </p>
+  <p>✨✨✨display가 block인 요소에 사용가능하다는 점!!</p>
+  <h4>🎈가상요소 만들기 연습</h4>
+  <p>::befor ::after inline속성을 가진다.</p>
+  <div class="pseudo">Red</div>
+  <div class="pseudo">Yellow</div>
+  <div class="pseudo">Blue</div>
+</body>
+</html>

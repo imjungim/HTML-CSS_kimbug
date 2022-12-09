@@ -1,0 +1,59 @@
+
+.container{
+  margin-bottom: 30px;
+}
+
+/* float의 붕뜬 문제 해결 */
+.container::after{
+  content:"";
+  display: block;
+  clear: left;
+}
+
+.box {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 6px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+}
+.d1 {
+  float: left;
+  background: red;
+}
+.d2 {
+  float: left;
+  background: orange;
+}
+.d3 {
+  float: right;
+  background: red;
+}
+.d4 {
+  float: right;
+  background: orange;
+}
+
+/* container2 */
+
+.box2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 50px;
+  height: 50px;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.a1 {
+  float: left;
+  background: red;
+}
+.a2 {
+  overflow: hidden;
+  background: orange;
+}

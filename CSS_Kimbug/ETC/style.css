@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  padding: 0 36px;
+  border: none;
+  border-radius: 50px;
+  margin: 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.box-shadow {
+  margin-top: 20px;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+.cancel-button{
+  background-color: #ff4949;
+  transition: box-shadow 250ms ease-in;
+ 
+}
+
+.confirm-button {
+  background-color: #13ce66;
+  transition: box-shadow 250ms ease-in;
+}
+
+/* 버튼에 마우스를 올렸을때만 그림자 효과 */
+
+.cancel-button:hover {
+  box-shadow: 0 10px 16px 0 rgba(255, 73, 73, 0.35);
+}
+
+.confirm-button:hover {
+  box-shadow: 0 10px 16px 0 rgba(19, 206, 102, 0.35);
+}
+
+/* overflow */
+
+p {
+  overflow: hidden;
+  width: 500px;
+  height: 400px;
+  background-color: #0066ff;
+ 
+}
+
+blockquote {
+  overflow: auto;
+  background-color: #ffc82c;
+}
+
+/* transform */
+.box {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #0066ff;
+  color: #fff;
+  text-align: center;
+  transform: rotate(45deg);
+  /* %사용 시 누구를 기준으로? 자기 자신의 사이즈를 기준으로 (width, height값 기준) */
+}
