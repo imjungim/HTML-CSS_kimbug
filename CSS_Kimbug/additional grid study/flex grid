@@ -1,0 +1,29 @@
+CSS Layout
+flex / grid
+한줄에 나란히 표현가능
+기본적으로 flex(row) 가로정렬이며, flex(column)으로 변경하면 세로 정렬이 가능하다.
+1차원적 배치할 수 있게 도와준다
+한줄에서 넘쳐나는경우 wrap속성을 이용해 다음줄로 이동하도록 설정도 가능.
+
+grid 2차원적으로 column과 row속성을 활용하여 아이템 배치가 가능하다
+
+보통 flex가 많이 사용된다.
+
+부모컨테이너에 display:grid를 적용하면 각각의 자식요소들은 grid cell로 변환된다.
+각각 grid에 어떤 속성 ? cell에 어떤속성?
+
+grid는 각각의 column사이즈를 지정하는 grid-template-columns
+세로 사이즈를 지정하는 grid-template-rows
+grid-template-areas 
+
+각각의 그리드 셀마다 gap을 얼마나 지정해줄것인지
+grid-gap
+gid-column-gap
+grid-row-gap
+
+grid-cell 얼마만큼의 크기를 차지할건지 어떤셀에 표기 몇개의 셀을 차지하길 원하는지
+grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end
+grid-area 어떤영역에 표시될지

@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  padding: 10px;
+  /* grid-template-columns: 100px 100px 100px; */
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: repeat(2, 100px); */
+  grid-auto-rows: 150px ; /* 몇줄인지 모르겠지만 각 줄당 150px */
+  /* grid-auto-rows: minmax(150px, auto); 아이템이 없어도 최소 150, 아이템이 많을경우 자동적으로 조절 */
+  /* grid-column-gap: 10px;
+  grid-row-gap: 10px; */
+  grid-gap: 10px; /*grid-cell에 적용되는 gap 그리드 전체에 gap을 주고 싶으면 padding을 지정 */
+
+}
+/* 부모grid 너비에따라 나누어서 %, fr(각각의 배율로_반응형), px */
+
+/* 아이템의 컨텐츠 사이즈가 다양할 경 */
+
+/* 원하는 영역 차지하ㄱㅣ */
+.item2 {
+  /* grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3; */
+
+  /* 번거로우니까 간편하게 적용하기 */
+  /* grid-column: 2 / 4; */
+  grid-column: 2 / span 2; /*몇개의 영역을 차지할지 span2 2개의 셀 차지, 제일 끝까지 -1:*/
+  grid-row: 1 / 3;
+}
