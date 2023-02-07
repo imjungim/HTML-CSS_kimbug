@@ -1,0 +1,9 @@
+.inline {
+  display: inline;
+  background-color: pink;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: skyblue;
+}

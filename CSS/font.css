@@ -7,6 +7,8 @@
        url('./asset/font/NanumSquareRoundL.woff2') format('woff2'), /* Super Modern Browsers */
        url('./asset/font/NanumSquareRoundL.woff') format('woff'), /* Pretty Modern Browsers */
        url('./asset/font/NanumSquareRoundL.ttf')  format('truetype'); /* Safari, Android, iOS */
-      
+   /* font face css trick참고 */   
 /* 각 브라우저별로 format이 다르다.웹폰트의 경로와 확장자를 써주자 */
 
+/* html에 import 할 경우 css처럼 link로 */
+/* css에 import 할 경우 @import url('./fonts.css'); */
