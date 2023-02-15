@@ -1,0 +1,50 @@
+:root {
+  /* 변수선언 */
+
+  /* color */
+  --white-color: #fff
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+  
+  /* Size */
+  --side-padding : 12px;
+  --avatar-size : 36px;
+
+
+  /* Font Size */
+  --font-large: 10px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
