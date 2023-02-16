@@ -26,82 +26,87 @@
     <video controls src="./assets/jeju.mp4"></video>
   </section>
 
-  <section class="info">
-    <!-- Metadata -->
-    <div class="metadata">
-      <ul class="hashtags">
-        <li>#DreamCoding</li>
-        <li>#DreamCoder</li>
-        <li>#Ellie</li>
-      </ul>
-    
-      <div class="title-button">
-        <span>Clone Coding: Youtube Mobile Website 내가만들었지~ 유튜브 모바일웹 따라 만들기 | 제주 애월 바다 HTML, CSS, JavaScript </span>
-        <button>
-          <i class="fas fa-caret-down"></i>
-        </button>
-      </div>
-    
-      <div class="views">
+  <div class="infoAndNext">
+    <section class="info">
+      <!-- Metadata -->
+      <div class="metadata">
+        <ul class="hashtags">
+          <li>#DreamCoding</li>
+          <li>#DreamCoder</li>
+          <li>#Ellie</li>
+        </ul>
+      
+        <div class="title-button">
+          <span class="title clamp">Clone Coding: Youtube Mobile Website 내가만들었지~ 유튜브 모바일웹 따라 만들기 | 제주 애월 바다 HTML, CSS, JavaScript css line clamp를 사용해서 2줄만 나오게 표시할 예정입니다. </span>
+          <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
         <span class="views">1M views 1 month ago</span>
       </div>
-    </div>
-    <!-- Actions -->
-    <ul class="actions">
-      <li><button><i class="fas fa-thumbs-up"></i><span>1k</span></button></li>
-      <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
-      <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
-      <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
-      <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
-    </ul>
-    <!-- Channel Description -->
-    <div class="channel">
-      <div class="metadata">
-        <img src="./assets/img-user-01.jpg" alt="사딸라아저씨">
-        <div class="info">
-          <span class="name">Hi IMjungim</span>
-          <span class="subscriers">1M subscribers</span>
+      <!-- Actions -->
+      <ul class="actions">
+        <li><button><i class="fas fa-thumbs-up active"></i><span>1k</span></button></li>
+        <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+        <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+        <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+        <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
+      </ul>
+      <!-- Channel Description -->
+      <div class="channel">
+        <div class="metadata">
+          <img src="./assets/img-user-01.jpg" alt="사딸라아저씨">
+          <div class="info">
+            <span class="name">Hi IMjungim</span>
+            <span class="subscriers">1M subscribers</span>
+          </div>
         </div>
-      </div>
         <button class="subscribe">
           subscribe
         </button>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section class="Upnext">
-    <span class="title">Up next</span>
-    <ul>
-      <li class="item">
-        <img src="./assets/img-user-01.jpg" alt="thumbnail" class="info">
-        <div class="info">
-          <span class="title">프론트엔드 개발자가 되고 싶은 저는 오늘도 열심히 퍼블리싱도 공부중인 하루 강의를 봅니다.🙏화이팅 (HTML,CSS,JavaScript 뽀개기 프로젝트)</span>
-          <span class="name">드림코딩 by 엘리</span>
-          <span class="views">82K views</span>
-        </div>
-        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i> </button>
-      </li>
-      <li class="item">
-        <img src="./assets/img-user-01.jpg" alt="thumbnail" class="info">
-        <div class="info">
-          <span class="title">프론트엔드 개발자가 되고 싶은 저는 오늘도 열심히 퍼블리싱도 공부중인 하루 강의를 봅니다.🙏화이팅 (HTML,CSS,JavaScript 뽀개기 프로젝트)</span>
-          <span class="name">드림코딩 by 엘리</span>
-          <span class="views">82K views</span>
-        </div>
-        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i> </button>
-      </li>
-      <li class="item">
-        <img src="./assets/img-user-01.jpg" alt="thumbnail" class="info">
-        <div class="info">
-          <span class="title">프론트엔드 개발자가 되고 싶은 저는 오늘도 열심히 퍼블리싱도 공부중인 하루 강의를 봅니다.🙏화이팅 (HTML,CSS,JavaScript 뽀개기 프로젝트)</span>
-          <span class="name">드림코딩 by 엘리</span>
-          <span class="views">82K views</span>
-        </div>
-        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i> </button>
-      </li>
-    </ul>
-  </section>
+    <section class="Upnext">
+      <span class="title">Up next</span>
+      <ul>
+        <li class="item">
+          <div class="img">   
+            <img src="./assets/img-user-01.jpg" alt="thumbnail" class="info"> 
+          </div>
+          <div class="info">
+            <span class="title">프론트엔드 개발자가 되고 싶은 저는 오늘도 열심히 퍼블리싱도 공부중인 하루 강의를 봅니다.🙏화이팅 (HTML,CSS,JavaScript 뽀개기 프로젝트)</span>
+            <span class="name">드림코딩 by 엘리</span>
+            <span class="views">82K views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i> </button>
+        </li>
+        <li class="item">
+          <div class="img">   
+            <img src="./assets/img-user-01.jpg" alt="thumbnail" class="info"> 
+          </div>        
+          <div class="info">
+            <span class="title">프론트엔드 개발자가 되고 싶은 저는 오늘도 열심히 퍼블리싱도 공부중인 하루 강의를 봅니다.🙏화이팅 (HTML,CSS,JavaScript 뽀개기 프로젝트)</span>
+            <span class="name">드림코딩 by 엘리</span>
+            <span class="views">82K views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i> </button>
+        </li>
+        <li class="item">
+          <div class="img">   
+          <img src="./assets/img-user-01.jpg" alt="thumbnail" class="info"> 
+          </div>
+          <div class="info">
+            <span class="title">프론트엔드 개발자가 되고 싶은 저는 오늘도 열심히 퍼블리싱도 공부중인 하루 강의를 봅니다.🙏화이팅 (HTML,CSS,JavaScript 뽀개기 프로젝트)</span>
+            <span class="name">드림코딩 by 엘리</span>
+            <span class="views">82K views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i> </button>
+        </li>
+      </ul>
+    </section>
+  </div>
 
-
+<script src="./main.js"></script>
 </body>
 </html>
